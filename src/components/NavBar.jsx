@@ -40,8 +40,8 @@ const Navbar = () => {
             className="cursor-pointer"
             onClick={handleLinkClick}
           >
-            <p className="font-bold text-4xl text-red-500">
-              K<span className="font-light text-sky-500">M</span>
+            <p className="font-bold text-2xl sm:text-xl lg:text-4xl text-red-600">
+              Kaiga.
             </p>
           </Link>
         </div>
