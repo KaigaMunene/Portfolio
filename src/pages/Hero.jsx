@@ -1,7 +1,5 @@
 import Hero from '../assets/images/hero-1.png';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
+
 
 const HeroSection = () => {
   return (
@@ -54,39 +52,6 @@ const HeroSection = () => {
           alt="Kaiga Munene smiling, Full-Stack Developer Enthusiast"
           className="h-full w-auto object-cover"
         />
-      </div>
-
-      {/* Social Icons */}
-      <div className="absolute bottom-4 left-6 md:left-12 flex gap-4">
-        <a
-          href="https://linkedin.com/in/kaiga-munene"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="text-gray-800 hover:text-blue-700 border border-solid border-gray-800 rounded-full p-2"
-        >
-          <FaLinkedin className="text-3xl" />
-        </a>
-
-        <a
-          href="https://github.com/KaigaMunene"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-          className="text-gray-800 hover:text-gray-700 border border-solid border-gray-800 rounded-full p-2"
-        >
-          <FaGithub className="text-3xl" />
-        </a>
-
-        <a
-          href="https://twitter.com/KaigaMunene"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter"
-          className="text-gray-800 hover:text-blue-600 border border-solid border-gray-800 rounded-full p-2"
-        >
-          <FaSquareXTwitter className="text-3xl" />
-        </a>
       </div>
     </section>
   );
