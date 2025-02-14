@@ -1,127 +1,80 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Navbar height (adjust this according to your navbar height)
-  const navbarHeight = 60;
-
-  // Handle scroll behavior
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleLinkClick = () => {
-    setIsMenuOpen(false);
-  };
+  const handleLinkClick = () => setIsMenuOpen(false);
 
   return (
     <nav
-      className={`fixed w-full z-10 transition duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-gray-200'
-      }`}
+      className={`fixed w-full z-10 transition duration-300 ${isScrolled ? 'bg-secondary shadow-md' : 'bg-primary'}`}
     >
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex items-center">
+      <div className="container text-primary_text_color mx-auto px-4 py-3 flex justify-between items-center">
+        {/* Left: Logo */}
+        <div>
           <Link
             to="home"
-            smooth={true}
+            smooth
             duration={500}
             className="cursor-pointer"
             onClick={handleLinkClick}
           >
-            <p className="font-bold text-2xl sm:text-xl lg:text-4xl text-red-600">
-              Kaiga.
-            </p>
+            <p className="font-bold text-2xl text-red-600">Kaiga.</p>
           </Link>
         </div>
 
-        {/* Links (Desktop) */}
+        {/* Center: Nav Links */}
         <div className="hidden md:flex space-x-8">
-          <Link
-            to="home"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className={`cursor-pointer transition ${
-              isScrolled ? 'text-gray-700' : 'text-black'
-            } hover:text-purple-600`}
-            onClick={handleLinkClick}
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className={`cursor-pointer transition ${
-              isScrolled ? 'text-gray-700' : 'text-black'
-            } hover:text-purple-600`}
-            onClick={handleLinkClick}
-          >
-            About
-          </Link>
-          <Link
-            to="own-your-mic"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className={`cursor-pointer transition ${
-              isScrolled ? 'text-gray-700' : 'text-black'
-            } hover:text-purple-600`}
-            onClick={handleLinkClick}
-          >
-            Projects
-          </Link>
-          <Link
-            to="services"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className={`cursor-pointer transition ${
-              isScrolled ? 'text-gray-700' : 'text-black'
-            } hover:text-purple-600`}
-            onClick={handleLinkClick}
-          >
-            Experience
-          </Link>
-          <Link
-            to="podcast"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className={`cursor-pointer transition ${
-              isScrolled ? 'text-gray-700' : 'text-black'
-            } hover:text-purple-600`}
-            onClick={handleLinkClick}
-          >
-            Blog
-          </Link>
+          {['Home', 'About', 'Projects', 'Experience', 'Blog'].map((item) => (
+            <Link
+              key={item}
+              to={item.toLowerCase()}
+              smooth
+              duration={500}
+              className="text-black hover:text-secondary_text_color hover:underline cursor-pointer"
+              onClick={handleLinkClick}
+            >
+              {item}
+            </Link>
+          ))}
         </div>
 
-        {/* Contact Us Button */}
-        <div className="hidden md:block">
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className="bg-orange-600 text-white px-6 py-2 rounded-lg shadow hover:bg-black transition cursor-pointer"
-            onClick={handleLinkClick}
+        {/* Right: Social Icons */}
+        <div className="hidden md:flex space-x-4">
+          <a
+            href="https://linkedin.com/in/kaiga-munene"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black text-base hover:text-blue-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
           >
-            Contact
-          </Link>
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/KaigaMunene"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black text-base hover:text-gray-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://twitter.com/KaigaMunene"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black text-base hover:text-blue-600 border border-gray-800 rounded-full p-2 flex items-center justify-center"
+          >
+            <FaSquareXTwitter />
+          </a>
         </div>
 
         {/* Hamburger Menu (Mobile) */}
@@ -135,57 +88,49 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className="block px-4 py-2 text-gray-700 hover:bg-purple-100"
-            onClick={handleLinkClick}
-          >
-            About
-          </Link>
-          <Link
-            to="own-your-mic"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className="block px-4 py-2 text-gray-700 hover:bg-purple-100"
-            onClick={handleLinkClick}
-          >
-            Own Your Mic
-          </Link>
-          <Link
-            to="services"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className="block px-4 py-2 text-gray-700 hover:bg-purple-100"
-            onClick={handleLinkClick}
-          >
-            Services
-          </Link>
-          <Link
-            to="podcast"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className="block px-4 py-2 text-gray-700 hover:bg-purple-100"
-            onClick={handleLinkClick}
-          >
-            Podcast
-          </Link>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            offset={-navbarHeight} // Add offset here
-            className="block px-4 py-2 text-purple-600 font-bold hover:bg-purple-100"
-            onClick={handleLinkClick}
-          >
-            Contact
-          </Link>
+        <div className="md:hidden bg-white shadow-md flex flex-col items-center py-4 space-y-4">
+          {['Home', 'About', 'Projects', 'Experience', 'Blog', 'Contact'].map(
+            (item) => (
+              <Link
+                key={item}
+                to={item.toLowerCase()}
+                smooth
+                duration={500}
+                className="text-gray-700 hover:text-secondary_text_color cursor-pointer"
+                onClick={handleLinkClick}
+              >
+                {item}
+              </Link>
+            ),
+          )}
+
+          {/* Mobile Social Links */}
+          <div className="flex space-x-4 mt-4">
+            <a
+              href="https://linkedin.com/in/kaiga-munene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black text-sm hover:text-blue-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/KaigaMunene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black text-sm hover:text-gray-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://twitter.com/KaigaMunene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black text-sm hover:text-blue-600 border border-gray-800 rounded-full p-2 flex items-center justify-center"
+            >
+              <FaSquareXTwitter />
+            </a>
+          </div>
         </div>
       )}
     </nav>
