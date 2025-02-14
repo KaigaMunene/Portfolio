@@ -5,6 +5,11 @@ export default {
     extend: {
       colors: {
         dark: '#081b29',
+        primary: '#FFFFFF',
+        secondary: '#F8F7F2',
+        primary_text_color: '#0A2E3D',
+        secondary_text_color: '#296F6D',
+        btn_color: '#fb3640',
     },
   },
   plugins: [],

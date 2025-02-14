@@ -17,9 +17,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-10 transition duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-gray-200'}`}
+      className={`fixed w-full z-10 transition duration-300 ${isScrolled ? 'bg-secondary shadow-md' : 'bg-primary'}`}
     >
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="container text-primary_text_color mx-auto px-4 py-3 flex justify-between items-center">
         {/* Left: Logo */}
         <div>
           <Link
@@ -41,7 +41,7 @@ const Navbar = () => {
               to={item.toLowerCase()}
               smooth
               duration={500}
-              className="text-black hover:text-purple-600 cursor-pointer"
+              className="text-black hover:text-secondary_text_color hover:underline cursor-pointer"
               onClick={handleLinkClick}
             >
               {item}
@@ -55,7 +55,7 @@ const Navbar = () => {
             href="https://linkedin.com/in/kaiga-munene"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black text-base hover:text-blue-700"
+            className="text-black text-base hover:text-blue-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
           >
             <FaLinkedin />
           </a>
@@ -63,7 +63,7 @@ const Navbar = () => {
             href="https://github.com/KaigaMunene"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black text-base hover:text-gray-700"
+            className="text-black text-base hover:text-gray-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
           >
             <FaGithub />
           </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
             href="https://twitter.com/KaigaMunene"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black text-base hover:text-blue-600"
+            className="text-black text-base hover:text-blue-600 border border-gray-800 rounded-full p-2 flex items-center justify-center"
           >
             <FaSquareXTwitter />
           </a>
@@ -96,7 +96,7 @@ const Navbar = () => {
                 to={item.toLowerCase()}
                 smooth
                 duration={500}
-                className="text-gray-700 hover:text-purple-600 cursor-pointer"
+                className="text-gray-700 hover:text-secondary_text_color cursor-pointer"
                 onClick={handleLinkClick}
               >
                 {item}
@@ -110,7 +110,7 @@ const Navbar = () => {
               href="https://linkedin.com/in/kaiga-munene"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black text-sm hover:text-blue-700"
+              className="text-black text-sm hover:text-blue-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
             >
               <FaLinkedin />
             </a>
@@ -118,7 +118,7 @@ const Navbar = () => {
               href="https://github.com/KaigaMunene"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black text-sm hover:text-gray-700"
+              className="text-black text-sm hover:text-gray-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
             >
               <FaGithub />
             </a>
@@ -126,7 +126,7 @@ const Navbar = () => {
               href="https://twitter.com/KaigaMunene"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black text-sm hover:text-blue-600"
+              className="text-black text-sm hover:text-blue-600 border border-gray-800 rounded-full p-2 flex items-center justify-center"
             >
               <FaSquareXTwitter />
             </a>
