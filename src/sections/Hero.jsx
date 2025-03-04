@@ -3,6 +3,7 @@ import Hero from '../assets/images/hero-1.png';
 const HeroSection = () => {
   return (
     <section
+      id="home"
       className="relative bg-secondary overflow-hidden min-h-screen flex flex-col-reverse md:flex-row items-center justify-around px-6 md:px-12 lg:px-20 py-12"
       aria-label="Hero section for portfolio"
     >

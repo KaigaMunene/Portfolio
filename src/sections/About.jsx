@@ -20,7 +20,9 @@ const About = () => {
 
         {/* Text Content Section */}
         <div className="text-center md:text-left">
-          <h2 className="text-3xl font-bold text-primary_text_color mb-4">About Me</h2>
+          <h2 className="text-3xl font-bold text-primary_text_color mb-4">
+            About Me
+          </h2>
           <p className="text-primary_text_color leading-relaxed mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -30,10 +32,10 @@ const About = () => {
             cillum dolore eu fugiat nulla pariatur.
           </p>
           <div className="flex justify-center md:justify-start gap-4">
-            <button className="bg-secondary_text_color text-primary px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+            <button className="bg-secondary_text_color text-primary px-6 py-2 rounded-lg font-semibold hover:bg-btn_color transition duration-300">
               Hire Me
             </button>
-            <button className="border border-btn_color text-btn_color px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 hover:text-gray-900 transition duration-300">
+            <button className="border border-btn_color text-btn_color px-6 py-2 rounded-lg font-semibold hover:bg-secondary_text_color hover:text-primary hover:border-secondary_text_color transition duration-300">
               Download CV
             </button>
           </div>
