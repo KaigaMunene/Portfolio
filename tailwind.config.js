@@ -1,3 +1,5 @@
+import scrollbarHide from 'tailwind-scrollbar-hide';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
@@ -10,8 +12,8 @@ export default {
         primary_text_color: '#0A2E3D',
         secondary_text_color: '#296F6D',
         btn_color: '#fb3640',
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [scrollbarHide],
 };
