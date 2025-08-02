@@ -1,53 +1,45 @@
 const Contact = () => {
   return (
-    <section id="contact" className="bg-gray-100 dark:bg-gray-800 py-12 h-fit flex items-center">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div>
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-6">
-            Get in Touch
-          </h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-8">
-            I&apos;m always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision. Whether you have a question
-            or just want to say hi, feel free to drop me a line!
+    <section id="contact" className="bg-white py-16 px-4">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+          Got an Idea? Let&apos;s Bring It to Life!
+        </h2>
+        <p className="text-lg text-gray-600 mb-8">
+          I&apos;m always excited to collaborate on new and innovative projects.
+          Whether you&apos;re starting from scratch or refining an existing
+          idea, let&apos;s make it happen.
+        </p>
+
+        <div className="bg-background_second rounded-2xl p-8 shadow-md">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4 underline decoration-secondary_text_color">
+            Contact Me
+          </h3>
+          <p className="text-dark mb-6">
+            Feel free to reach out via email or phone — I&apos;d love to hear
+            from you!
           </p>
-          <div>
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+
+          <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm font-medium">
+            <a
+              href="mailto:kaigamunene@gmail.com"
+              className="text-black border border-zinc-950 hover:bg-white px-6 py-3 rounded-full transition duration-300"
             >
-              Name : Kaiga Munene
-            </label>
-          </div>
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              Email Me
+            </a>
+            <a
+              href="https://wa.me/254713995896"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white bg-secondary_text_color hover:bg-green-700 px-6 py-3 rounded-full transition duration-300"
             >
-              Email : kaigamunene@gmail.com
-            </label>
-          </div>
-          <div>
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Phone : 0713995896
-            </label>
-          </div>
-          <div>
-            <label
-              htmlFor="address"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Address : Nairobi, Kenya.
-            </label>
+              WhatsApp Me
+            </a>
           </div>
         </div>
-
-        <div></div>
       </div>
     </section>
   );
 };
+
 export default Contact;

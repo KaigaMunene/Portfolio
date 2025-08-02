@@ -35,7 +35,7 @@ const Navbar = () => {
 
         {/* Center: Nav Links */}
         <div className="hidden md:flex space-x-8">
-          {['Home', 'About', 'Projects', 'Experience', 'Blog'].map((item) => (
+          {['Home', 'About', 'Projects', 'Experience', 'Contact'].map((item) => (
             <Link
               key={item}
               to={item.toLowerCase()}
@@ -89,7 +89,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md flex flex-col items-center py-4 space-y-4">
-          {['Home', 'About', 'Projects', 'Experience', 'Blog', 'Contact'].map(
+          {['Home', 'About', 'Projects', 'Experience', 'Contact', 'Contact'].map(
             (item) => (
               <Link
                 key={item}
