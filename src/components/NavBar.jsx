@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +34,7 @@ const Navbar = () => {
 
         {/* Center: Nav Links */}
         <div className="hidden md:flex space-x-8">
-          {['Home', 'About', 'Projects', 'Experience', 'Contact'].map((item) => (
+          {['Home', 'About', 'Projects', 'Contact'].map((item) => (
             <Link
               key={item}
               to={item.toLowerCase()}
@@ -51,30 +50,7 @@ const Navbar = () => {
 
         {/* Right: Social Icons */}
         <div className="hidden md:flex space-x-4">
-          <a
-            href="https://linkedin.com/in/kaiga-munene"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-black text-base hover:text-blue-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com/KaigaMunene"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-black text-base hover:text-gray-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://twitter.com/KaigaMunene"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-black text-base hover:text-blue-600 border border-gray-800 rounded-full p-2 flex items-center justify-center"
-          >
-            <FaSquareXTwitter />
-          </a>
+          call: 0713995896
         </div>
 
         {/* Hamburger Menu (Mobile) */}
@@ -106,30 +82,7 @@ const Navbar = () => {
 
           {/* Mobile Social Links */}
           <div className="flex space-x-4 mt-4">
-            <a
-              href="https://linkedin.com/in/kaiga-munene"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black text-sm hover:text-blue-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/KaigaMunene"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black text-sm hover:text-gray-700 border border-gray-800 rounded-full p-2 flex items-center justify-center"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://twitter.com/KaigaMunene"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black text-sm hover:text-blue-600 border border-gray-800 rounded-full p-2 flex items-center justify-center"
-            >
-              <FaSquareXTwitter />
-            </a>
+            call: 0713995896
           </div>
         </div>
       )}
