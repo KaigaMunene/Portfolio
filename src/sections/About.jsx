@@ -1,12 +1,11 @@
 import img from '../assets/images/hero-1.png';
+import Resume from './Resume';
+import Skills from './Skills';
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="bg-primary text-white py-16 px-6 md:px-12 lg:px-24 "
-    >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="about" className="bg-primary text-white py-16 container-x">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Image Section */}
         <div className="relative flex justify-center">
           <div className="border-4 border-r-0 border-t-0 border-secondary_text_color p-4">
@@ -32,15 +31,15 @@ const About = () => {
             cillum dolore eu fugiat nulla pariatur.
           </p>
           <div className="flex justify-center md:justify-start gap-4">
-            <button className="bg-secondary_text_color text-primary px-6 py-2 rounded-lg font-semibold hover:bg-btn_color transition duration-300">
-              Hire Me
-            </button>
             <button className="border border-btn_color text-btn_color px-6 py-2 rounded-lg font-semibold hover:bg-secondary_text_color hover:text-primary hover:border-secondary_text_color transition duration-300">
               Download CV
             </button>
           </div>
         </div>
       </div>
+
+      <Resume />
+      <Skills />
     </section>
   );
 };

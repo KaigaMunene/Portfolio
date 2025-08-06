@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section id="contact" className="bg-white py-16 px-4">
+    <section id="contact" className="bg-white container-x py-16">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
           Got an Idea? Let&apos;s Bring It to Life!
@@ -11,7 +11,7 @@ const Contact = () => {
           idea, let&apos;s make it happen.
         </p>
 
-        <div className="bg-background_second rounded-2xl p-8 shadow-md">
+        <div className="bg-secondary rounded-2xl p-8 shadow-md">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4 underline decoration-secondary_text_color">
             Contact Me
           </h3>
