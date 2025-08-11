@@ -4,10 +4,11 @@ import { GoArrowLeft } from 'react-icons/go';
 import { GoArrowRight } from 'react-icons/go';
 const data = [
   {
-    title: 'AI Strategy Guide',
-    category: 'E-book',
-    description: 'Help your organization achieve its goals with this AI guide.',
-    github: 'https://github.com/your-ai-project',
+    title: 'Portfolio Website',
+    category: 'Website',
+    description:
+      'My personal portfolio showcasing my skills and projects. I built this website using React, Tailwind CSS, and Framer Motion for animations.',
+    github: 'https://github.com/KaigaMunene/Portfolio',
     live: 'https://your-ai-project-live.com',
     image: 'https://source.unsplash.com/featured/?ai,business',
   },
