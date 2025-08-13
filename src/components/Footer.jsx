@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex items-center space-x-4">
           <span className="text-sm font-medium">Follow on:</span>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/kaiga-munene"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition-colors"
@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://github.com"
+            href="https://github.com/KaigaMunene"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-800 transition-colors"
@@ -32,7 +32,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/Kaiga_Munene"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange-700 transition-colors"
@@ -40,7 +40,7 @@ const Footer = () => {
             <IoLogoInstagram className="h-6 w-6" />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://twitter.com/Kaiga_treymylo"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition-colors"

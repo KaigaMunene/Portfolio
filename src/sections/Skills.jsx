@@ -37,27 +37,27 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="w-full min-h-screen container-x bg-white text-black flex flex-col items-center justify-center"
+      className="w-full bg-white text-black flex flex-col items-center justify-center py-8 sm:py-12 px-4"
     >
       {/* Section Title */}
-      <h3 className="text-2xl md:text-3xl font-semibold text-primary_text_color mb-12 text-center">
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-primary_text_color mb-8 sm:mb-12 text-center">
         My Skills
       </h3>
 
       {/* Skills Grid */}
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
         {/* Languages */}
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="bg-secondary shadow-lg rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300"
+          className="bg-secondary shadow-lg rounded-2xl p-4 sm:p-5 md:p-6 hover:shadow-xl transition-shadow duration-300"
         >
-          <h4 className="text-lg md:text-xl font-bold mb-4 border-b-2 pb-2 border-primary_text_color text-center">
+          <h4 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 border-b-2 pb-2 border-primary_text_color text-center">
             Languages
           </h4>
-          <ul className="space-y-3 text-center">
+          <ul className="space-y-2 sm:space-y-3 text-center">
             {[
               {
                 icon: <FaPython className="text-yellow-400" />,
@@ -74,7 +74,7 @@ const Skills = () => {
               <motion.li
                 key={name}
                 variants={item}
-                className="flex items-center gap-2 justify-center text-sm md:text-base hover:scale-105 transition-transform"
+                className="flex items-center gap-2 justify-center text-xs sm:text-sm md:text-base hover:scale-105 transition-transform"
                 title={name}
               >
                 {icon} {name}
@@ -89,12 +89,12 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="bg-secondary shadow-lg rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300"
+          className="bg-secondary shadow-lg rounded-2xl p-4 sm:p-5 md:p-6 hover:shadow-xl transition-shadow duration-300"
         >
-          <h4 className="text-lg md:text-xl font-bold mb-4 border-b-2 pb-2 border-primary_text_color text-center">
+          <h4 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 border-b-2 pb-2 border-primary_text_color text-center">
             Frameworks
           </h4>
-          <ul className="space-y-3 text-center">
+          <ul className="space-y-2 sm:space-y-3 text-center">
             {[
               { icon: <FaReact className="text-cyan-400" />, name: 'React' },
               {
@@ -115,7 +115,7 @@ const Skills = () => {
               <motion.li
                 key={name}
                 variants={item}
-                className="flex items-center gap-2 justify-center text-sm md:text-base hover:scale-105 transition-transform"
+                className="flex items-center gap-2 justify-center text-xs sm:text-sm md:text-base hover:scale-105 transition-transform"
                 title={name}
               >
                 {icon} {name}
@@ -130,12 +130,12 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="bg-secondary shadow-lg rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300"
+          className="bg-secondary shadow-lg rounded-2xl p-4 sm:p-5 md:p-6 hover:shadow-xl transition-shadow duration-300"
         >
-          <h4 className="text-lg md:text-xl font-bold mb-4 border-b-2 pb-2 border-primary_text_color text-center">
+          <h4 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 border-b-2 pb-2 border-primary_text_color text-center">
             Tools
           </h4>
-          <ul className="space-y-3 text-center">
+          <ul className="space-y-2 sm:space-y-3 text-center">
             {[
               { icon: <FaGitAlt className="text-orange-500" />, name: 'Git' },
               { icon: <FaDocker className="text-blue-400" />, name: 'Docker' },
@@ -152,7 +152,7 @@ const Skills = () => {
               <motion.li
                 key={name}
                 variants={item}
-                className="flex items-center gap-2 justify-center text-sm md:text-base hover:scale-105 transition-transform"
+                className="flex items-center gap-2 justify-center text-xs sm:text-sm md:text-base hover:scale-105 transition-transform"
                 title={name}
               >
                 {icon} {name}

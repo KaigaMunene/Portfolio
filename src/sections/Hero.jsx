@@ -27,7 +27,7 @@ const HeroSection = () => {
         </p>
         <div className="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
           <a
-            href="#contact"
+            href="mailto:kaigamunene@gmail.com"
             className="bg-btn_color text-white font-medium py-2 sm:py-3 px-4 sm:px-6 rounded-lg shadow hover:bg-secondary_text_color text-xs sm:text-sm md:text-base"
             aria-label="Hire Me"
           >

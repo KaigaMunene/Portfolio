@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import ProjectCard from './ProjectCard';
 import { GoArrowLeft } from 'react-icons/go';
 import { GoArrowRight } from 'react-icons/go';
+import portfolioImg from '../assets/images/portfolio.png'; 
+
 const data = [
   {
     title: 'Portfolio Website',
@@ -9,8 +11,8 @@ const data = [
     description:
       'My personal portfolio showcasing my skills and projects. I built this website using React, Tailwind CSS, and Framer Motion for animations.',
     github: 'https://github.com/KaigaMunene/Portfolio',
-    live: 'https://your-ai-project-live.com',
-    image: 'https://source.unsplash.com/featured/?ai,business',
+    live: 'https://kaigamunene.netlify.app/',
+    image: portfolioImg,
   },
   {
     title: 'Microsoft Cloud Blog',

@@ -75,7 +75,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://twitter.com/KaigaMunene"
+            href="https://twitter.com/Kaiga_treymylo"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition-colors"
@@ -85,7 +85,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/Kaiga_Munene"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange-700 transition-colors"
@@ -144,7 +144,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href="https://twitter.com/KaigaMunene"
+              href="https://twitter.com/Kaiga_treymylo"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-500 transition-colors"
@@ -154,7 +154,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/Kaiga_Munene"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-orange-700 transition-colors"
